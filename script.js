@@ -11,7 +11,7 @@ const textBox2 = document.getElementById('text-box2');
 
 // Dark of Light images
 function imageMode(color) {
-    image1.src = `img/undraw_proud_coder_${color}.svg`;
+    image1.src = `img/undraw_design_team_af2y_${color}.svg`;
     image2.src = `img/undraw_feeling_proud_${color}.svg`;
     image3.src = `img/undraw_Coding_re_iv62_${color}.svg`;
     image4.src = `img/undraw_Security_on_re_e491_${color}.svg`;
