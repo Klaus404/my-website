@@ -90,6 +90,10 @@ a:focus {
   display: flex;
 }
 
+@-moz-keyframes spin { 100% { -moz-transform: rotateY(180deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotateY(180deg); } }
+@keyframes spin { 100% { -webkit-transform: rotateY(180deg); transform:rotateY(180deg); } }
+
 .image-container {
   border: 1px solid var(--secondary-color);
   border-radius: 10px;
@@ -98,6 +102,12 @@ a:focus {
   width: auto;
   background: var(--background);
   box-shadow: var(--box-shadow);
+}
+
+.image-container:hover {
+  -webkit-animation:spin 2s linear infinite;
+  -moz-animation:spin 2s linear infinite;
+  animation:spin 2s linear infinite;
 }
 
 img {
@@ -278,4 +288,62 @@ input:checked + .slider::before {
 .fas {
   font-size: 30px;
   margin-right: 5px;
+}
+
+
+/*Media Query: Tablet or smaller*/
+@media screen and (max-width: 600px){
+  
+  nav {
+    font-size: 8px;
+    letter-spacing: 3px;
+    padding: 12px;
+    width: 80vw;
+    background: rgb(255 255 255 / 50%);
+  }
+  
+
+ h1{
+   font-size: 25px;
+ }
+
+ h2{
+  font-size: 20px;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+}
+
+.text-box{
+  width: 60%;
+  font-size: 10px;
+}
+
+.text-box2{
+  width: 60%;
+  font-size: 10px;
+}
+
+button {
+  min-width: 10px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.fab {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.far {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+
+
 }
