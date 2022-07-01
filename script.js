@@ -36,7 +36,7 @@ function lightMode() {
     imageMode('light');
 }
 
-// Switch Theme Dynamicallu
+// Switch Theme Dynamically
 function switchTheme(event) {
     if (event.target.checked){
         document.documentElement.setAttribute('data-theme', 'dark');

@@ -168,6 +168,7 @@ button:hover:not(.outline) {
 }
 
 .text-box {
+  font-size: large;
   width: 40%;
   text-align: justify;
   background: rgb(0 0 0 / 50%);
@@ -177,6 +178,7 @@ button:hover:not(.outline) {
 }
 
 .text-box2 {
+  font-size: large;
   width: 40%;
   text-align: justify;
   background: rgb(0 0 0 / 50%);
